@@ -24,8 +24,15 @@ class AppConfig:
 
     primary_white_color: str = config.get('colors', 'PRIMARY_WHITE_COLOR')
 
+    # Font
+    default_font: str = config.get('fonts', 'DEFAULT_FONT')
+    small_font_size: int = config.getint('fonts', 'SMALL_FONT_SIZE')
+    medium_font_size: int = config.getint('fonts', 'MEDIUM_FONT_SIZE')
+    large_font_size: int = config.getint('fonts', 'LARGE_FONT_SIZE')
+
     # App
     title: str = config.get('app', 'TITLE')
+    initial_window_scale: float = config.getfloat('app', 'INITIAL_WINDOW_SCALE')
 
     # Logos
     primary_logo_white_path: str = config.get('logos', 'PRIMARY_LOGO_WHITE_PATH')
